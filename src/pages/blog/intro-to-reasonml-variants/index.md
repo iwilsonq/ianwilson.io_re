@@ -71,7 +71,7 @@ First of all there's less code, which is great, but beside the point. In practic
 
 The error message is actually quite helpful when this happens.
 
-![non-exhaustive.png]
+![Error: Non exhaustive switch statement](/images/non-exhaustive.png)
 
 Fixing this issue simply requires that you cover the other possibilities.
 
