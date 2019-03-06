@@ -3,7 +3,7 @@ title: How a Type System Improves your JavaScript Code
 date: 2019-02-24T21:25:04.540Z
 path: how-types-improve-javascript
 description: Discover how a type system improves your developer workflow
-tags: reasonm,react,javascript,typescript
+tags: reason,react,javascript,typescript
 ---
 
 Vanilla JavaScript is untyped by nature, some will call it “smart” because it is able to figure out what is a number or a string.

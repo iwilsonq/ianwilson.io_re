@@ -28,7 +28,8 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "bsb -make-world",
-    "build": "gatsby build",
+    "build": "bsb -make-world && gatsby build",
+    "now-build": "npm run build",
     "dev:bsb": "bsb -make-world -w",
     "dev:gatsby": "gatsby develop",
     "clean": "bsb -clean-world",
