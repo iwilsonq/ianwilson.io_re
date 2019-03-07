@@ -14,8 +14,12 @@ S /Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-css/lib/ocam
 B /Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-css/lib/ocaml
 S /Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-date-fns/lib/ocaml
 B /Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-date-fns/lib/ocaml
+S /Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-fetch/lib/ocaml
+B /Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-fetch/lib/ocaml
 S re
 B lib/bs/re
+S re/article-code
+B lib/bs/re/article-code
 S re/types
 B lib/bs/re/types
 ####BSB GENERATED: NO EDIT}

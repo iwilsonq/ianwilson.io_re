@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Ian Wilson',
+    title: 'Ian Wilson: JavaScript, ReasonML, and GraphQL',
     author: 'Ian Wilson',
   },
   plugins: [
@@ -8,13 +8,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-reasonml',
-        short_name: 'starter-reasonml',
+        name: 'ianwilson.io',
+        short_name: 'ianwilson.io',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#db4d3f',
+        theme_color: '#db4d3f',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
     {

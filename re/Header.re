@@ -4,37 +4,42 @@ module Styles = {
   open Css;
   let header =
     style([backgroundColor(hex("db4d3f")), marginBottom(px(16))]);
-  let content =
+  let h1 = style([margin(px(0))]);
+  let link =
+    style([color(white), textDecoration(none), marginRight(px(16))]);
+  let nav =
     style([
       display(`flex),
       alignItems(`center),
       justifyContent(`spaceBetween),
       margin2(~v=px(0), ~h=`auto),
       maxWidth(px(1000)),
-      padding2(~v=px(16), ~h=px(24))
+      padding2(~v=px(0), ~h=px(24)),
     ]);
-  let h1 = style([margin(px(0))]);
-  let link = style([color(white), textDecoration(none)]);
-  let nav = style([]);
+  let logo =
+    style([height(px(64)), marginRight(px(36)), marginTop(px(8))]);
 };
 
 let make = (~siteTitle, _children) => {
   ...component,
-  render: _self =>
+  render: _self => {
+    Js.log(siteTitle);
     <header className=Styles.header>
-      <div className=Styles.content>
-        <h1 className=Styles.h1>
-          <Gatsby.Link to_="/" className=Styles.link>
-            {siteTitle |> ReasonReact.string}
-          </Gatsby.Link>
-        </h1>
-        <nav className=Styles.nav>
+      <nav className=Styles.nav>
+        <Gatsby.Link to_="/" className=Styles.link>
+          <img className=Styles.logo src="/images/iw-logo-1.png" alt="logo" />
+        </Gatsby.Link>
+        <div>
           <Gatsby.Link to_="/blog" className=Styles.link>
             {"Blog" |> ReasonReact.string}
           </Gatsby.Link>
-        </nav>
-      </div>
-    </header>,
+          <Gatsby.Link to_="/" className=Styles.link>
+            {"About" |> ReasonReact.string}
+          </Gatsby.Link>
+        </div>
+      </nav>
+    </header>;
+  },
 };
 
 let default =

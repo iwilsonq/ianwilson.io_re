@@ -10,7 +10,7 @@ let make = _children => {
   ...component,
   render: _self =>
     <div>
-      <h1> {"ianwilson.io: JavaScript, ReasonML, and GraphQL" |> str} </h1>
+      <h1> {"Ian Wilson: JavaScript, ReasonML, and GraphQL" |> str} </h1>
       <p>
         {"I am Ian and I like to code and run, though not simultaneously."
          |> str}
@@ -59,6 +59,8 @@ let make = _children => {
           {"Definitely check out the blog" |> str}
         </Gatsby.Link>
       </p>
+      <Divider />
+      <Newsletter />
     </div>,
 };
 

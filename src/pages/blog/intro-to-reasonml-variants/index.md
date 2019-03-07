@@ -1,12 +1,12 @@
 ---
-title: An Intro to ReasonML Variants
+title: Intro to ReasonML Variants
 date: 2019-03-02T21:25:04.540Z
 path: intro-to-reasonml-variants
 description: Learn to wield ReasonML variants to create better, typesafe web applications
 tags: reason,javascript,webdev,functional
 ---
 
-ReasonML is a super fast, expressive, and functional programming language. Currently, it can be compiled to optimized JavaScript for the web, WebGL/OpenGL for native graphics rendering, or even native bytecode.
+ReasonML is a super fast, expressive, and functional programming language. Currently, it can be compiled to optimized JavaScript for the web, WebGL/OpenGL for graphics rendering, or even native bytecode.
 
 One of my favorite features of Reason are variant data types. These types allow us to handle enums in a sane way, forcing us to handle all possibilities for a particular scenario. We can define a variant type like this:
 

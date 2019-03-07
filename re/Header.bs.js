@@ -16,7 +16,23 @@ var header = Css.style(/* :: */[
       ]
     ]);
 
-var content = Css.style(/* :: */[
+var h1 = Css.style(/* :: */[
+      Css.margin(Css.px(0)),
+      /* [] */0
+    ]);
+
+var link = Css.style(/* :: */[
+      Css.color(Css.white),
+      /* :: */[
+        Css.textDecoration(Css.none),
+        /* :: */[
+          Css.marginRight(Css.px(16)),
+          /* [] */0
+        ]
+      ]
+    ]);
+
+var nav = Css.style(/* :: */[
       Css.display(/* flex */-1010954439),
       /* :: */[
         Css.alignItems(/* center */98248149),
@@ -27,7 +43,7 @@ var content = Css.style(/* :: */[
             /* :: */[
               Css.maxWidth(Css.px(1000)),
               /* :: */[
-                Css.padding2(Css.px(16), Css.px(24)),
+                Css.padding2(Css.px(0), Css.px(24)),
                 /* [] */0
               ]
             ]
@@ -36,27 +52,23 @@ var content = Css.style(/* :: */[
       ]
     ]);
 
-var h1 = Css.style(/* :: */[
-      Css.margin(Css.px(0)),
-      /* [] */0
-    ]);
-
-var link = Css.style(/* :: */[
-      Css.color(Css.white),
+var logo = Css.style(/* :: */[
+      Css.height(Css.px(64)),
       /* :: */[
-        Css.textDecoration(Css.none),
-        /* [] */0
+        Css.marginRight(Css.px(36)),
+        /* :: */[
+          Css.marginTop(Css.px(8)),
+          /* [] */0
+        ]
       ]
     ]);
 
-var nav = Css.style(/* [] */0);
-
 var Styles = /* module */[
   /* header */header,
-  /* content */content,
   /* h1 */h1,
   /* link */link,
-  /* nav */nav
+  /* nav */nav,
+  /* logo */logo
 ];
 
 function make(siteTitle, _children) {
@@ -71,15 +83,16 @@ function make(siteTitle, _children) {
           /* willUpdate */component[/* willUpdate */7],
           /* shouldUpdate */component[/* shouldUpdate */8],
           /* render */(function (_self) {
+              console.log(siteTitle);
               return React.createElement("header", {
                           className: header
-                        }, React.createElement("div", {
-                              className: content
-                            }, React.createElement("h1", {
-                                  className: h1
-                                }, ReasonReact.element(undefined, undefined, Gatsby$ReactTemplate.Link[/* make */0]("/", link, /* array */[siteTitle]))), React.createElement("nav", {
-                                  className: nav
-                                }, ReasonReact.element(undefined, undefined, Gatsby$ReactTemplate.Link[/* make */0]("/blog", link, /* array */["Blog"])))));
+                        }, React.createElement("nav", {
+                              className: nav
+                            }, ReasonReact.element(undefined, undefined, Gatsby$ReactTemplate.Link[/* make */0]("/", link, /* array */[React.createElement("img", {
+                                            className: logo,
+                                            alt: "logo",
+                                            src: "/images/iw-logo-1.png"
+                                          })])), React.createElement("div", undefined, ReasonReact.element(undefined, undefined, Gatsby$ReactTemplate.Link[/* make */0]("/blog", link, /* array */["Blog"])), ReasonReact.element(undefined, undefined, Gatsby$ReactTemplate.Link[/* make */0]("/", link, /* array */["About"])))));
             }),
           /* initialState */component[/* initialState */10],
           /* retainedProps */component[/* retainedProps */11],

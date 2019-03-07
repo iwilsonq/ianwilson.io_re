@@ -1,5 +1,3 @@
-let log = Js.log("hell0o");
-
 type color =
   | Red
   | Blue

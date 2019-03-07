@@ -3,6 +3,8 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 
 import Bio from '../../re/Bio.bs'
+import Divider from '../../re/Divider.bs'
+import Newsletter from '../../re/Newsletter.bs'
 import Layout from '../components/layout'
 
 class BlogPostTemplate extends React.Component {
@@ -30,7 +32,9 @@ class BlogPostTemplate extends React.Component {
           style={{ marginBottom: 64 }}
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <hr />
+        <Divider />
+        <Newsletter />
+        <Divider />
         <Bio />
       </Layout>
     )

@@ -18,8 +18,11 @@ let make = (~posts, _children) => {
   render: _self => {
     let renderPosts =
       posts
-      |> Array.map(post => <MarkdownPost key=post##id post />)
-      |> ReasonReact.array;
+      ->Belt_SortArray.stableSortBy((postA, postB) =>
+          postA##frontmatter##date < postB##frontmatter##date ? 1 : (-1)
+        )
+      ->Belt_Array.map(post => <MarkdownPost key=post##id post />)
+      ->ReasonReact.array;
     <div> renderPosts </div>;
   },
 };

@@ -1,8 +1,7 @@
 let str = ReasonReact.string;
-
 module Styles = {
   open Css;
-  let article = style([marginBottom(px(32))])
+  let article = style([marginBottom(px(32))]);
   let link =
     style([
       textDecoration(`none),

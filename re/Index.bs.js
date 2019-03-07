@@ -5,6 +5,8 @@ var Css = require("bs-css/src/Css.js");
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
 var Gatsby$ReactTemplate = require("./types/Gatsby.bs.js");
+var Divider$ReactTemplate = require("./Divider.bs.js");
+var Newsletter$ReactTemplate = require("./Newsletter.bs.js");
 
 function str(prim) {
   return prim;
@@ -34,7 +36,7 @@ function make(_children) {
           /* willUpdate */component[/* willUpdate */7],
           /* shouldUpdate */component[/* shouldUpdate */8],
           /* render */(function (_self) {
-              return React.createElement("div", undefined, React.createElement("h1", undefined, "ianwilson.io: JavaScript, ReasonML, and GraphQL"), React.createElement("p", undefined, "I am Ian and I like to code and run, though not simultaneously."), React.createElement("p", undefined, "Sometimes you can find me..."), React.createElement("ul", undefined, React.createElement("li", undefined, "tweeting about web development and tech on twitter ", React.createElement("a", {
+              return React.createElement("div", undefined, React.createElement("h1", undefined, "Ian Wilson: JavaScript, ReasonML, and GraphQL"), React.createElement("p", undefined, "I am Ian and I like to code and run, though not simultaneously."), React.createElement("p", undefined, "Sometimes you can find me..."), React.createElement("ul", undefined, React.createElement("li", undefined, "tweeting about web development and tech on twitter ", React.createElement("a", {
                                       href: "https://twitter.com/iwilsonq",
                                       target: "_blank"
                                     }, "@iwilsonq")), React.createElement("li", undefined, "blogging about all stack development on ", React.createElement("a", {
@@ -48,7 +50,7 @@ function make(_children) {
                                     }, "SF Bay Area"))), React.createElement("p", undefined, "Tech note for the curious: this blog is bootstrapped with Gatsby and most of the components are built with ReasonML. The repo exists ", React.createElement("a", {
                                   href: "https://github.com/iwilsonq/ianwilson.io_re",
                                   target: "_blank"
-                                }, "on Github.")), React.createElement("p", undefined, React.createElement("strong", undefined, "Looking to learn more about ReasonML or whatever else I'm working on?"), React.createElement("br", undefined), ReasonReact.element(undefined, undefined, Gatsby$ReactTemplate.Link[/* make */0]("/blog", link, /* array */["Definitely check out the blog"]))));
+                                }, "on Github.")), React.createElement("p", undefined, React.createElement("strong", undefined, "Looking to learn more about ReasonML or whatever else I'm working on?"), React.createElement("br", undefined), ReasonReact.element(undefined, undefined, Gatsby$ReactTemplate.Link[/* make */0]("/blog", link, /* array */["Definitely check out the blog"]))), ReasonReact.element(undefined, undefined, Divider$ReactTemplate.make(/* array */[])), ReasonReact.element(undefined, undefined, Newsletter$ReactTemplate.make(/* array */[])));
             }),
           /* initialState */component[/* initialState */10],
           /* retainedProps */component[/* retainedProps */11],

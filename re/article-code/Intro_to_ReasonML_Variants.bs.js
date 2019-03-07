@@ -4,8 +4,6 @@
 var Block = require("bs-platform/lib/js/block.js");
 var Caml_obj = require("bs-platform/lib/js/caml_obj.js");
 
-console.log("hell0o");
-
 function restrictRange(number, min, max) {
   if (Caml_obj.caml_greaterthan(number, max)) {
     return max;
@@ -83,9 +81,6 @@ console.log(getMonthlyPriceForCarColor(/* Rgb */Block.__(1, [
             167
           ])));
 
-var log = /* () */0;
-
-exports.log = log;
 exports.restrictRange = restrictRange;
 exports.restrictRangef = restrictRangef;
 exports.validatePercentage = validatePercentage;
