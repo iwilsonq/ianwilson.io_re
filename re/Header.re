@@ -1,5 +1,3 @@
-let component = ReasonReact.statelessComponent("header");
-
 module Styles = {
   open Css;
   let header =
@@ -20,29 +18,24 @@ module Styles = {
     style([height(px(64)), marginRight(px(36)), marginTop(px(8))]);
 };
 
-let make = (~siteTitle, _children) => {
-  ...component,
-  render: _self => {
-    Js.log(siteTitle);
-    <header className=Styles.header>
-      <nav className=Styles.nav>
-        <Gatsby.Link to_="/" className=Styles.link>
-          <img className=Styles.logo src="/images/iw-logo-1.png" alt="logo" />
+[@react.component]
+let make = (~siteTitle) => {
+  Js.log(siteTitle);
+  <header className=Styles.header>
+    <nav className=Styles.nav>
+      <Gatsby.Link _to="/" className=Styles.link>
+        <img className=Styles.logo src="/images/iw-logo-1.png" alt="logo" />
+      </Gatsby.Link>
+      <div>
+        <Gatsby.Link _to="/blog" className=Styles.link>
+          {"Blog" |> ReasonReact.string}
         </Gatsby.Link>
-        <div>
-          <Gatsby.Link to_="/blog" className=Styles.link>
-            {"Blog" |> ReasonReact.string}
-          </Gatsby.Link>
-          <Gatsby.Link to_="/" className=Styles.link>
-            {"About" |> ReasonReact.string}
-          </Gatsby.Link>
-        </div>
-      </nav>
-    </header>;
-  },
+        <Gatsby.Link _to="/" className=Styles.link>
+          {"About" |> ReasonReact.string}
+        </Gatsby.Link>
+      </div>
+    </nav>
+  </header>;
 };
 
-let default =
-  ReasonReact.wrapReasonForJs(~component, jsProps =>
-    make(~siteTitle=jsProps##siteTitle, [||])
-  );
+let default = make;

@@ -2,8 +2,7 @@
 B lib/bs
 FLG -open ReactTemplate
 FLG -ppx /Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/graphql_ppx/ppx
-FLG -ppx '/Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-platform/lib/reactjs_jsx_ppx_2.exe'
-FLG -ppx /Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-platform/lib/bsppx.exe
+FLG -ppx '/Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-platform/lib/bsppx.exe -bs-jsx 3'
 S /Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-platform/lib/ocaml
 B /Users/ianwilson/reason-workspace/ianwilson.io_re/node_modules/bs-platform/lib/ocaml
 FLG -nostdlib -color always

@@ -1,5 +1,3 @@
-let component = ReasonReact.statelessComponent("Divider");
-
 module Styles = {
   open Css;
   let hr =
@@ -10,9 +8,7 @@ module Styles = {
     ]);
 };
 
-let make = _children => {
-  ...component,
-  render: _self => <hr className=Styles.hr />,
-};
+[@react.component]
+let make = () => <hr className=Styles.hr />;
 
-let default = ReasonReact.wrapReasonForJs(~component, _jsProps => make([||]));
+let default = make;

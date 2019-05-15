@@ -24,13 +24,13 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    {
-      resolve: `gatsby-source-medium`,
-      options: {
-        username: `@iwilsonq`,
-        limit: 200
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-medium`,
+    //   options: {
+    //     username: `@iwilsonq`,
+    //     limit: 200
+    //   }
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
